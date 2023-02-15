@@ -1,0 +1,291 @@
+/* CSS for body tag */
+body {
+    width: auto;
+    background-color: #1d222b;
+}
+
+/* CSS for buttons */
+div.legend {
+    width: 180px;
+    margin: 25px;
+    display: flex;
+}   
+    
+    div.legend button {
+        width: 100%;
+        height: auto;
+        padding: 5px 40px;
+        margin: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #1d222b;
+        border: 2px solid white;
+        border-radius: 24px;
+        display: block;
+        cursor: pointer;
+    }
+
+    div.legend #alkEarthMet {
+        border: 4px solid #009cc7;
+    }  
+    
+    div.legend #transMetal {
+        border: 4px solid #ff8000;
+    }
+
+    div.legend #nonmetals {
+        border: 4px solid #f5be25;
+    }
+
+    div.legend #alkaliMetals {
+        border: 4px solid #fe1110;
+    }
+
+    div.legend #halogens {
+        border: 4px solid #00803b;
+    }
+    div.legend #noblegas {
+        border: 4px solid #6f25a1;
+    }
+
+    div.legend #postTransMetal {
+        border: 4px solid #006daf;
+    }
+
+    div.legend #lanthanides {
+        border: 4px solid #cf6142;
+    }
+
+    div.legend #metalloids {
+        border: 4px solid #c41d3d;
+    }
+
+    div.legend #actinides {
+        border: 4px solid #567735;
+    }
+
+/* from here starts CSS for div containter */
+div.container {
+    width: 1600px;
+    height: 920px;
+    margin: 20px 0px 0px 20px;
+    display: inline-block;
+}
+    /* CSS for div numberHorizontal, groupNumber class and element p*/
+    div.container .numberHorizontal {
+        height: 50px;
+        margin-left: 20px;
+    }
+        div.numberHorizontal #groupNumber {
+            width: 30px;
+            margin-left: 0px;
+            font-size: 14px;
+        }
+        div.numberHorizontal p {
+            margin: 0px 34px 0px 34px;
+            font-size: 18px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+        }
+    /* CSS for div numberVertical, period class and element p */
+    div.container .numberVertical {
+        width: 75px;
+        height: 830px;
+        margin-left: 2px;
+        vertical-align: top;
+        display: inline-block; 
+    }   
+        div.numberVertical #period{
+            margin-top: 0px;
+            font-size: 14px;
+            text-align: center;
+        }
+        div.numberVertical p{
+            margin: 60px 0px 63px 0px;
+            font-size: 18px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            display: block;
+        }
+        div.numberVertical div {
+            margin: 90px 0px 0px 200px;
+        }
+
+    /* CSS for div content */
+    div.container .content {
+        width: 1380px;
+        margin: 50px 0px 0px 0px;
+        display: inline-block;
+    }
+
+    /* CSS for div content and its div row */
+    div.content div {
+        width: 1490px;
+        margin-top: 5px;
+    }
+        div.content #he {
+            margin-left: 1325px;
+        }
+        div.content .rightRow{
+            width: 494px;
+            margin: 0px 0px 0px 828px;
+            display: inline-block;
+        }
+        div.content .row8, .row9 {
+            margin: 30px 0px 0px 166px;
+            width: 1241px;
+        }
+        div.content .row9 {
+            width: 1241px;
+        }
+    div.content h1 {
+        width: 75px;
+        height: 55px;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        border-radius: 4px;
+        border: 2px solid white;
+        font-size: 20px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        vertical-align: top;
+    }
+    div.content .number {
+        margin: 5px 0px 0px 5px;
+        font-size: 10px;
+        text-align: left;
+    }
+    div.content .none {
+        color: white;
+        border: 2px solid #1d222b;
+    }
+    div.content .name {
+        margin: 0px 0px 2px 0px;
+        font-size: 11px;
+        letter-spacing: 0.75px;
+    }
+    div.content .atomicMass {
+        margin: 0px auto;
+        font-size: 11px;
+        letter-spacing: 0.75px;
+    }
+
+    /* CSS specific for element with long name that has smaller font size than others */
+    div.content #rutherfordium, #darmstadium, #roentgenium, #copernicium, #livermorium, #mendelevium {
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+    div.content #praseodymium {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+
+/* CSS to color and hover each element.*/
+div.content .nonmetals {
+    border: 2px solid #f5be25;
+    color: white;
+}
+    div.content .nonmetals:hover {
+        background-color: #f5be25;
+        border: 2px solid #f5be25;
+        color: black
+    }
+
+div.content .alkalineEarthMetals {
+    border: 2px solid #009cc7;
+    color: white;
+}  
+
+    div.content .alkalineEarthMetals:hover {
+        background-color: #009cc7;
+        border: 2px solid #009cc7;
+        color: #ffffff;
+    }
+
+
+div.content .alkaliMetals {
+    border: 2px solid #fe1110;
+    color: white;
+}
+    div.content .alkaliMetals:hover {
+        background-color: #fe1110;
+        border: 2px solid #fe1110;
+        color: white;
+    }
+
+div.content .halogens {
+    border: 2px solid #00803b;
+    color: white;
+}
+    div.content .halogens:hover {
+        background-color: #00803b;
+        border: 2px solid #00803b;
+        color: white;
+    }
+
+div.content .transitionMetals {
+    border: 2px solid #ff8000;
+    color: white;
+}
+    div.content .transitionMetals:hover {
+    background-color: #ff8000;
+    border: 2px solid #ff8000;
+    color: black;
+    }
+
+div.content .noblegas {
+    border: 2px solid #6f25a1;
+    color: white;
+}   
+    div.content .noblegas:hover {
+        background-color: #6f25a1;
+        border: 2px solid #6f25a1;
+        color: white;
+}
+
+div.content .postTransitionMetal {
+    border: 2px solid #006daf;
+    color: white;
+}
+    div.content .postTransitionMetal:hover {
+        background-color: #006daf;
+        border: 2px solid #006daf;
+        color: white;
+    }
+
+div.content .lanthanides {
+    border: 2px solid #cf6142;
+    color: white;
+}
+    div.content .lanthanides:hover {
+        background-color: #cf6142;
+        border: 2px solid #cf6142;
+        color: black;
+    }
+
+div.content .metalloids {
+    border: 2px solid #c41d3d;
+    color: white;
+}
+    div.content .metalloids:hover {
+        background-color: #c41d3d;
+        border: 2px solid #c41d3d;
+        color: white;
+    }
+
+div.content .actinides {
+    border: 2px solid #567735;
+    color: white;
+}
+    div.content .actinides:hover {
+        background-color: #567735;
+        border: 2px solid #567735;
+        color: white;
+    }
+

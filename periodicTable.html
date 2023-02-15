@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="/periodicTable.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="periodicTable.css"/>
+</head>
+<body>
+    <!-- <div class="legend">
+        <button onclick="btnMetalloids()" id="metalloids" value="OFF">Metalloids</button>
+        <button onclick="btnAlakaliMetals()" id="alkaliMetals" value="OFF">Alkali Metals</button>
+        <button onclick="btnLanthanides()" id="lanthanides" value="OFF">Lanthanides</button>
+        <button onclick="btntransMetal()" id="transMetal" value="OFF">Transition Metal</button>
+        <button onclick="btnnonMetals()" id="nonmetals" value="OFF">Other Nonmetals</button>
+        <button onclick="btnActinides()" id="actinides" value="OFF">Actinides</button>
+        <button onclick="btnHalogens()" id="halogens" value="OFF">Halogens</button>
+        <button onclick="btnAlkEarthMet()" id="alkEarthMet" value="OFF">Alkaline Earth Metal</button>
+        <button onclick="btnPostTransMetal()" id="postTransMetal" value="OFF">Post-transition Metal</button>
+        <button onclick="btnNobleGas()" id="noblegas" value="OFF">Noble Gases</button>
+
+    </div> -->
+    <div class="container">
+        <div class="numberHorizontal">
+            <p id="groupNumber">Group Number</p>
+            <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p>
+        </div>
+        <div class="numberVertical">
+            <p id="period">Period</p>
+            <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p>
+            <div>
+                <p>6</p><p>7</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row1">
+                <h1 class="nonmetals"><p class="number">1</p>H<p class="name">Hydrogen</p><p class="atomicMass">1.008</p></h1>
+                <h1 id='he' class="noblegas"><p class="number">2</p>He<p class="name">Helium</p><p class="atomicMass">4.003</p></h1>
+            </div>
+            <div class="row2">
+                <h1 class="alkaliMetals"><p class="number">3</p>Li<p class="name">Lithium</p><p class="atomicMass">6.941</p></h1>
+                <h1 class="alkalineEarthMetals" name="alkEarthMet"><p class="number">4</p>Be<p class="name">Beryllium</p><p class="atomicMass">9.012</p></h1>
+                <div class="rightRow">
+                    <h1 class="metalloids"><p class="number">5</p>B<p class="name">Boron</p><p class="atomicMass">10.811</p></h1>
+                    <h1 class="nonmetals"><p class="number">6</p>C<p class="name">Carbon</p><p class="atomicMass">12.011</p></h1>
+                    <h1 class="nonmetals"><p class="number">7</p>N<p class="name">Nitrogen</p><p class="atomicMass">14.007</p></h1>
+                    <h1 class="nonmetals"><p class="number">8</p>O<p class="name">Oxygen</p><p class="atomicMass">15.999</p></h1>
+                    <h1 class="halogens"><p class="number">9</p>F<p class="name">Fluorine</p><p class="atomicMass">18.998</p></h1>
+                    <h1 class="noblegas"><p class="number">10</p>Ne<p class="name">Neon</p><p class="atomicMass">20.180</p></h1>
+                </div>
+            </div>
+            <div class="row3">
+                <h1 class="alkaliMetals"><p class="number">11</p>Na<p class="name">Sodium</p><p class="atomicMass">22.990</p></h1>
+                <h1 class="alkalineEarthMetals"><p class="number">12</p>Mg<p class="name">Magnesium</p><p class="atomicMass">24.305</p></h1>
+                <div class="rightRow">
+                    <h1 class="postTransitionMetal"><p class="number">13</p>Al<p class="name">Aluminum</p><p class="atomicMass">26.982</p></h1>
+                    <h1 class="metalloids"><p class="number">14</p>Si<p class="name">Silicon</p><p class="atomicMass">28.086</p></h1>
+                    <h1 class="nonmetals"><p class="number">15</p>P<p class="name">Phosphorus</p><p class="atomicMass">30.974</p></h1>
+                    <h1 class="nonmetals"><p class="number">16</p>S<p class="name">Sulfur</p><p class="atomicMass">32.066</p></h1>
+                    <h1 class="halogens"><p class="number">17</p>Cl<p class="name">Chlorine</p><p class="atomicMass">35.353</p></h1>
+                    <h1 class="noblegas"><p class="number">18</p>Ar<p class="name">Argon</p><p class="atomicMass">39.948</p></h1>
+                </div>
+            </div>
+            <div class="row4">
+                <h1 class="alkaliMetals"><p class="number">19</p>K<p class="name">Potassium</p><p class="atomicMass">39.098</p></h1>
+                <h1 class="alkalineEarthMetals"><p class="number">20</p>Ca<p class="name">Calcium</p><p class="atomicMass">40.078</p></h1>
+                <h1 class="transitionMetals"><p class="number">21</p>Sc<p class="name">Scandium</p><p class="atomicMass">44.956</p></h1>
+                <h1 class="transitionMetals"><p class="number">22</p>Ar<p class="name">Titanium</p><p class="atomicMass">47.88</p></h1>
+                <h1 class="transitionMetals"><p class="number">23</p>V<p class="name">Vanadium</p><p class="atomicMass">50.942</p></h1>
+                <h1 class="transitionMetals"><p class="number">24</p>Cr<p class="name">Chromium</p><p class="atomicMass">51.996</p></h1>
+                <h1 class="transitionMetals"><p class="number">25</p>Mn<p class="name">Manganese</p><p class="atomicMass">54.938</p></h1>
+                <h1 class="transitionMetals"><p class="number">26</p>Fe<p class="name">Iron</p><p class="atomicMass">55.845</p></h1>
+                <h1 class="transitionMetals"><p class="number">27</p>Co<p class="name">Cobalt</p><p class="atomicMass">58.933</p></h1>
+                <h1 class="transitionMetals"><p class="number">28</p>Ni<p class="name">Nickel</p><p class="atomicMass">58.693</p></h1>
+                <h1 class="transitionMetals"><p class="number">29</p>Cu<p class="name">Cupper</p><p class="atomicMass">63.546</p></h1>
+                <h1 class="transitionMetals"><p class="number">30</p>Zn<p class="name">Zinc</p><p class="atomicMass">65.38</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">31</p>Ga<p class="name">Gallium</p><p class="atomicMass">69.723</p></h1>
+                <h1 class="metalloids"><p class="number">32</p>Ge<p class="name">Germanium</p><p class="atomicMass">72.631</p></h1>
+                <h1 class="metalloids"><p class="number">33</p>As<p class="name">Arsenic</p><p class="atomicMass">74.922</p></h1>
+                <h1 class="nonmetals"><p class="number">34</p>Se<p class="name">Selenium</p><p class="atomicMass">78.971</p></h1>
+                <h1 class="halogens"><p class="number">35</p>Br<p class="name">Bromine</p><p class="atomicMass">79.904</p></h1>
+                <h1 class="noblegas"><p class="number">36</p>Kr<p class="name">Krypton</p><p class="atomicMass">83.798</p></h1>
+            </div>
+            <div class="row5">
+                <h1 class="alkaliMetals"><p class="number">37</p>Rb<p class="name">Rubidium</p><p class="atomicMass">85.468</p></h1>
+                <h1 class="alkalineEarthMetals"><p class="number">38</p>Sr<p class="name">Strontium</p><p class="atomicMass">87.62</p></h1>
+                <h1 class="transitionMetals"><p class="number">39</p>Y<p class="name">Yttrium</p><p class="atomicMass">88.906</p></h1>
+                <h1 class="transitionMetals"><p class="number">40</p>Zr<p class="name">Zirconium</p><p class="atomicMass">91.224</p></h1>
+                <h1 class="transitionMetals"><p class="number">41</p>Nb<p class="name">Niobium</p><p class="atomicMass">92.906</p></h1>
+                <h1 class="transitionMetals"><p class="number">42</p>Mo<p class="name">Molybdenum</p><p class="atomicMass">95.95</p></h1>
+                <h1 class="transitionMetals"><p class="number">43</p>Tc<p class="name">Technetium</p><p class="atomicMass">98.907</p></h1>
+                <h1 class="transitionMetals"><p class="number">44</p>Ru<p class="name">Ruthenium</p><p class="atomicMass">101.07</p></h1>
+                <h1 class="transitionMetals"><p class="number">45</p>Rh<p class="name">Rhodium</p><p class="atomicMass">102.906</p></h1>
+                <h1 class="transitionMetals"><p class="number">46</p>Pd<p class="name">Palladium</p><p class="atomicMass">106.42</p></h1>
+                <h1 class="transitionMetals"><p class="number">47</p>Ag<p class="name">Silver</p><p class="atomicMass">107.868</p></h1>
+                <h1 class="transitionMetals"><p class="number">48</p>Cd<p class="name">Cadmium</p><p class="atomicMass">112.414</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">49</p>In<p class="name">Indium</p><p class="atomicMass">114.818</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">50</p>Sn<p class="name">Tin</p><p class="atomicMass">118.711</p></h1>
+                <h1 class="metalloids"><p class="number">51</p>Sb<p class="name">Antimony</p><p class="atomicMass">121.760</p></h1>
+                <h1 class="metalloids"><p class="number">52</p>Te<p class="name">Tellurium</p><p class="atomicMass">127.6</p></h1>
+                <h1 class="halogens"><p class="number">53</p>I<p class="name">Iodine</p><p class="atomicMass">126.904</p></h1>
+                <h1 class="noblegas"><p class="number">54</p>Xe<p class="name">Xenon</p><p class="atomicMass">131.294</p></h1>
+            </div>
+            <div class="row6">
+                <h1 class="alkaliMetals"><p class="number">55</p>Cs<p class="name">Cesium</p><p class="atomicMass">132.905</p></h1>
+                <h1 class="alkalineEarthMetals"><p class="number">56</p>Ba<p class="name">Barium</p><p class="atomicMass">137.328</p></h1>
+                <h1 class="none"><p class="number">57-71</p></h1>
+                <h1 class="transitionMetals"><p class="number">72</p>Hf<p class="name">Hafnium</p><p class="atomicMass">178.49</p></h1>
+                <h1 class="transitionMetals"><p class="number">73</p>Ba<p class="name">Tantalum</p><p class="atomicMass">180.948</p></h1>
+                <h1 class="transitionMetals"><p class="number">74</p>W<p class="name">Tungsten</p><p class="atomicMass">183.95</p></h1>
+                <h1 class="transitionMetals"><p class="number">75</p>Re<p class="name">Rhenium</p><p class="atomicMass">186.207</p></h1>
+                <h1 class="transitionMetals"><p class="number">76</p>Os<p class="name">Osmium</p><p class="atomicMass">190.23</p></h1>
+                <h1 class="transitionMetals"><p class="number">77</p>Ir<p class="name">Iridium</p><p class="atomicMass">192.22</p></h1>
+                <h1 class="transitionMetals"><p class="number">78</p>Pt<p class="name">Platinum</p><p class="atomicMass">195.08</p></h1>
+                <h1 class="transitionMetals"><p class="number">79</p>Au<p class="name">Gold</p><p class="atomicMass">196.967</p></h1>
+                <h1 class="transitionMetals"><p class="number">80</p>Hg<p class="name">Mercury</p><p class="atomicMass">200.59</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">81</p>Tl<p class="name">Thalium</p><p class="atomicMass">204.383</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">82</p>Pb<p class="name">Lead</p><p class="atomicMass">207.2</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">83</p>Bi<p class="name">Bismuth</p><p class="atomicMass">208.980</p></h1>
+                <h1 class="metalloids"><p class="number">84</p>Po<p class="name">Polonium</p><p class="atomicMass">[208.982]</p></h1>
+                <h1 class="halogens"><p class="number">85</p>At<p class="name">Astatine</p><p class="atomicMass">209.987</p></h1>
+                <h1 class="noblegas"><p class="number">86</p>Rn<p class="name">Radon</p><p class="atomicMass">222.018</p></h1>
+            </div>
+            <div class="row7">
+                <h1 class="alkaliMetals"><p class="number">87</p>Fr<p class="name">Francium</p><p class="atomicMass">232.020</p></h1>
+                <h1 class="alkalineEarthMetals"><p class="number">88</p>Ra<p class="name">Radium</p><p class="atomicMass">226.025</p></h1>
+                <h1 class="none"><p class="number">89-103</p></h1>
+                <h1 class="transitionMetals"><p class="number">104</p>Rf<p class="name" id="rutherfordium">Rutherfordium</p><p class="atomicMass">[261]</p></h1>
+                <h1 class="transitionMetals"><p class="number">105</p>Db<p class="name">Dubnium</p><p class="atomicMass">[262]</p></h1>
+                <h1 class="transitionMetals"><p class="number">106</p>Sg<p class="name">Seaborgium</p><p class="atomicMass">[266]</p></h1>
+                <h1 class="transitionMetals"><p class="number">107</p>Bh<p class="name">Bohrium</p><p class="atomicMass">[264]</p></h1>
+                <h1 class="transitionMetals"><p class="number">108</p>Hs<p class="name">Hassium</p><p class="atomicMass">[269]</p></h1>
+                <h1 class="transitionMetals"><p class="number">109</p>Mt<p class="name">Meitnerium</p><p class="atomicMass">[279]</p></h1>
+                <h1 class="transitionMetals"><p class="number">110</p>Ds<p class="name" id="darmstadium">Darmstadium</p><p class="atomicMass">[281]</p></h1>
+                <h1 class="transitionMetals"><p class="number">111</p>Rg<p class="name" id="roentgenium">Roentgenium</p><p class="atomicMass">[280]</p></h1>
+                <h1 class="transitionMetals"><p class="number">112</p>Cn<p class="name" id="copernicium">Copernicium</p><p class="atomicMass">[285]</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">113</p>Nh<p class="name">Nihonium</p><p class="atomicMass">[286]</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">114</p>Fl<p class="name">Flerovium</p><p class="atomicMass">[289]</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">115</p>Mc<p class="name">Moscovium</p><p class="atomicMass">[289]</p></h1>
+                <h1 class="postTransitionMetal"><p class="number">116</p>Lv<p class="name" id="livermorium">Livermorium</p><p class="atomicMass">[293]</p></h1>
+                <h1 class="halogens"><p class="number">117</p>Ts<p class="name">Tennessine</p><p class="atomicMass">[294]</p></h1>
+                <h1 class="noblegas"><p class="number">118</p>Og<p class="name">Oganesson</p><p class="atomicMass">[294]</p></h1>
+            </div>
+            <div class="row8">
+                <h1 class="lanthanides"><p class="number">57</p>La<p class="name">Lanthanum</p><p class="atomicMass">138.905</p></h1>
+                <h1 class="lanthanides"><p class="number">58</p>Ce<p class="name">Cerium</p><p class="atomicMass">140.116</p></h1>
+                <h1 class="lanthanides"><p class="number">59</p>Rb<p class="name" id="praseodymium">Praseodymium</p><p class="atomicMass">140.908</p></h1>
+                <h1 class="lanthanides"><p class="number">60</p>Nd<p class="name">Neodymium</p><p class="atomicMass">144.243</p></h1>
+                <h1 class="lanthanides"><p class="number">61</p>Pm<p class="name">Promethium</p><p class="atomicMass">144.913</p></h1>
+                <h1 class="lanthanides"><p class="number">62</p>Sm<p class="name">Samarium</p><p class="atomicMass">150.36</p></h1>
+                <h1 class="lanthanides"><p class="number">63</p>Eu<p class="name">Europium</p><p class="atomicMass">151.964</p></h1>
+                <h1 class="lanthanides"><p class="number">64</p>Gd<p class="name">Gadolinium</p><p class="atomicMass">157.25</p></h1>
+                <h1 class="lanthanides"><p class="number">65</p>Tb<p class="name">Terbium</p><p class="atomicMass">158.925</p></h1>
+                <h1 class="lanthanides"><p class="number">66</p>Dy<p class="name">Dysprosium</p><p class="atomicMass">162.500</p></h1>
+                <h1 class="lanthanides"><p class="number">67</p>Ho<p class="name">Holmium</p><p class="atomicMass">164.930</p></h1>
+                <h1 class="lanthanides"><p class="number">68</p>Er<p class="name">Erbium</p><p class="atomicMass">167.259</p></h1>
+                <h1 class="lanthanides"><p class="number">69</p>Tm<p class="name">Thulium</p><p class="atomicMass">168.934</p></h1>
+                <h1 class="lanthanides"><p class="number">70</p>Yb<p class="name">Ytterbium</p><p class="atomicMass">173.055</p></h1>
+                <h1 class="lanthanides"><p class="number">71</p>Lu<p class="name">Lutetium</p><p class="atomicMass">174.967</p></h1>
+            </div>
+            <div class="row9">
+                <h1 class="actinides"><p class="number">89</p>Ac<p class="name">Actinium</p><p class="atomicMass">[227]</p></h1>
+                <h1 class="actinides"><p class="number">90</p>Th<p class="name">Thorium</p><p class="atomicMass">232.04</p></h1>
+                <h1 class="actinides"><p class="number">91</p>Pa<p class="name">Protactinium</p><p class="atomicMass">[247]</p></h1>
+                <h1 class="actinides"><p class="number">92</p>U<p class="name">Uranium</p><p class="atomicMass">238.03</p></h1>
+                <h1 class="actinides"><p class="number">93</p>Np<p class="name">Neptunium</p><p class="atomicMass">[237]</p></h1>
+                <h1 class="actinides"><p class="number">94</p>Pu<p class="name">Plutonium</p><p class="atomicMass">[244]</p></h1>
+                <h1 class="actinides"><p class="number">95</p>Am<p class="name">Americium</p><p class="atomicMass">[243]</p></h1>
+                <h1 class="actinides"><p class="number">96</p>Cm<p class="name">Curium</p><p class="atomicMass">[247]</p></h1>
+                <h1 class="actinides"><p class="number">97</p>Bk<p class="name">Berkelium</p><p class="atomicMass">[247]</p></h1>
+                <h1 class="actinides"><p class="number">98</p>Cf<p class="name">Californium</p><p class="atomicMass">[251]</p></h1>
+                <h1 class="actinides"><p class="number">99</p>Es<p class="name">Einsteinium</p><p class="atomicMass">[252]</p></h1>
+                <h1 class="actinides"><p class="number">100</p>Fm<p class="name">Fermium</p><p class="atomicMass">[257]</p></h1>
+                <h1 class="actinides"><p class="number">101</p>Md<p class="name" id="mendelevium">Mendelevium</p><p class="atomicMass">[258]</p></h1>
+                <h1 class="actinides"><p class="number">102</p>No<p class="name">Nobelium</p><p class="atomicMass">[259]</p></h1>
+                <h1 class="actinides"><p class="number">103</p>Lr<p class="name">Lawrencium</p><p class="atomicMass">[266]</p></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
